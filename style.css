@@ -1,0 +1,61 @@
+html, body, div, h1, p, img, ol, li{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+}
+.wrapper.started{
+   padding-bottom: 30px;
+}
+:focus{
+    outline: none;
+}
+ol{
+    width: 100%;
+}
+li{
+    width: 100%;
+    padding: 15px 10px;
+    border-bottom: 1px solid #e2e2e2;
+    list-style-position: inside;
+    background: #fff;
+}
+li:nth-child(odd){
+    background: #efefef;
+}
+input{
+    display: none;
+    width: 75%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+button.add{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+    background: rgb(23, 147, 230);
+    text-align: center;
+    outline: none;
+}
+button.small{
+    display: inline-block;
+    width: 22%;
+    padding: 5px;
+}
+button.finish{
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    border-radius: 0;
+    background: rgb(23, 147, 230);
+    color: #fff;
+    border: none;
+}

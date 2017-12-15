@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Timetracking",
+    "description": "TImetracking first aid for those who are pissed by teambox :D",
+    "version": "1.0",
+  
+    "browser_action": {
+     "default_icon": "icon.png",
+     "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage"
+    ]
+}
