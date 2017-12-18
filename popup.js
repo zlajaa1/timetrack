@@ -8,6 +8,7 @@ var finishBtn = document.getElementById('finish');
 var started = false;
 var trackArray = [];
 
+// Update task array and local storage
 var pushTask = function(task, time){
   var obj = {
     'task': task,
@@ -17,7 +18,7 @@ var pushTask = function(task, time){
   localStorage.setItem('track', JSON.stringify(trackArray));
 }
 
-//Write into list
+// Write into list
 var writeList = function(text, time){
   var li = document.createElement('LI');
   li.innerHTML = time +' '+ text;

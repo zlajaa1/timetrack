@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
   <div class="wrapper">
-    <button id="finish" class="finish">Finish day</button>
-    <input type="text" id="input" name="input" />
-    <button id="submitItem" class="add">Start Rockin'</button>
-    <ol id="loged-list"></ol>
+    <!-- Header -->
+    <div class="header">
+      <div class="header-section">
+        <button id="btnAdd" class="btn-add">+</button>
+        <div id="timer" class="timer-container">00:00:00</div>
+      </div>
+      <input id="input" type="text" placeholder="Task or Project name" />
+      <span id="btnClose" class="close">X</span>
+    </div>
+    
+    <!-- Tasklist -->
+    <ul id="taskList"></ul>
+
+    <!-- Start & Finish btns -->
+    <button id="btnStart" class="btn">Start your day!</button>
+    <button id="btnFinish" class="btn">Finish your day!</button>
   </div>
-  <script src="popup.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
